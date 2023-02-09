@@ -209,10 +209,13 @@ wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2204-arm64
 
 ### mongodb 데이터 백업
 ```
-sudo apt-get install unzip
+sudo apt-get install unzip # 압축 해제 명령어 install
 ```
 ```
-unzip ./dump.zip
+unzip ./dump.zip # cli로 zip 파일 압축해제
+```
+```
+mongorestore ./dump # dump폴더에 있는 데이터 백업
 ```
 ### 환경변수 설정
 ```
